@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "865090990827",
+    "firebase_url": "https://fir-cloudmessaging-1751e.firebaseio.com",
+    "project_id": "fir-cloudmessaging-1751e",
+    "storage_bucket": "fir-cloudmessaging-1751e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:865090990827:android:b00e3e70a7ba8d31",
+        "android_client_info": {
+          "package_name": "leapingwolf.firebasecloudmessaging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "865090990827-a2tfhnmsg8mc9dfn9jduof4gihf8vv69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBd4qC30-3rEGEP_6yIWd5Rx2PjfgksfZ0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
