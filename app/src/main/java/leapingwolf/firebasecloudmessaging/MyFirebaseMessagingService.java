@@ -41,7 +41,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
      * @param messageBody FCM message body received.
      */
     private void sendNotification(String messageBody,String user, String clickAction) {
-        try {
             Intent intent = new Intent(clickAction);
             intent.putExtra("user", user);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -62,5 +61,4 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
             notificationManager.notify(0 /* ID of notification */, notificationBuilder.build());
         }
-    }
 }
