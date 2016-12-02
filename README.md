@@ -1,13 +1,13 @@
-# FirebaseCloudMessagingDemo
-## FCM notification with data and click action
+## FirebaseCloudMessagingDemo for notification with data and click action
+
 ### Set up android app on firebase developer console
 
 ![Create a project and add an app using the firebase developer console](https://github.com/akshatashan/FirebaseCloudMessagingDemo/blob/master/screenshots/Firebase%20console%20App%20setup.png)
 
 - Download the google-services.json file and place it in the app folder of the Android Project
 
-- Note down the server key from the settings page of the firebase project.This will be used in the POST request to the Firebase Api
-[Firebase server key](https://github.com/akshatashan/FirebaseCloudMessagingDemo/blob/master/screenshots/Server%20key.png)
+- Note down the Firebase server key from the settings page of the firebase project.This will be used in the POST request to the Firebase Api
+![Firebase server key](https://github.com/akshatashan/FirebaseCloudMessagingDemo/blob/master/screenshots/Server%20key.png)
 
 
 ### Android setup for Firebase Cloud Messaging 
@@ -83,11 +83,11 @@ apply plugin: 'com.google.gms.google-services'
 
 ### Sending a push notification to the android app.
 I use Postman to show the structure of the json and the headers in the POST request to the Firebase Api.
-- Set the `Authorization` header in the request to "key=[Firebase server key](https://github.com/akshatashan/FirebaseCloudMessagingDemo/blob/master/screenshots/Server%20key.png)"
-[Insert image for postman header](https://github.com/akshatashan/FirebaseCloudMessagingDemo/blob/master/screenshots/PostRequestHeaders.png)
+- Set the `Authorization` header in the request to "key=<Firebase server key>(https://github.com/akshatashan/FirebaseCloudMessagingDemo/blob/master/screenshots/Server%20key.png)"
+![Header](https://github.com/akshatashan/FirebaseCloudMessagingDemo/blob/master/screenshots/PostRequestHeaders.png)
 
 - The request body is a json with the following structure
     * registration_ids - Identifies the android device that receives the push notification.Specify the value of the token obtained in the Launcher Activity here.ex: ackfjajfal124fjd
     * notification - defines a title and message body for the push notification. It also defines the `clickAction` - the activity to be launched on clicking the notification on the android device
     * Data - custom data sent as part of the request and used by the notification activity.
-    [Insert image for postman body](https://github.com/akshatashan/FirebaseCloudMessagingDemo/blob/master/screenshots/PostRequestBodyWithResult.png)
+![Body](https://github.com/akshatashan/FirebaseCloudMessagingDemo/blob/master/screenshots/PostRequestBodyWithResult.png)
