@@ -5,12 +5,18 @@ package leapingwolf.firebasecloudmessaging;
  */
 
 public class User {
+    private Integer id;
     private String name;
     private String occupation;
 
-    public User(String name, String occupation){
+    public User(Integer id, String name, String occupation){
         this.name = name;
         this.occupation =occupation;
+        this.id = id;
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public String getName() {
