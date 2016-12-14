@@ -1,0 +1,19 @@
+{
+    "registration_ids": ["ch6RmULF9Ts:APA91bE8Y6zgcwtAX6N9rqqPB5bqom39t5GtPMb9SEzj49mIB_vdK835ZfWNbzaX_vj2wL9V3ddeifQ2jQq3Vu-ieHor3lTpIUvd6gPW_fqmS_TI5u-YbKf56aY18mJQlCjmiqWs-T-s"], 
+    "collapse_key": "Updates Available"
+    "notification": {
+                        "title": "title", 
+                        "desc": "description",
+                        "body": "Message received", 
+                        "sound": "TYPE_NOTIFICATION",
+                        "click_action": "leapingwolf.firebasecloudmessaging.targetAction"
+                    },
+    "data":         {
+                        "user": 
+                        {
+                            "id": 2
+                            "name":"leapingwolf", 
+                            "occupation": "passionate coder"
+                        }
+                    }
+}
